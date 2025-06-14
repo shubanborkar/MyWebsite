@@ -11,40 +11,35 @@ export const projects = [
     name: "Sign Language Translator",
     description:
       "Bridging communication gaps with vision and code. A real-time sign language recognition system using Python, OpenCV, and TensorFlow. This project leverages computer vision to interpret hand gestures and translate them into readable text, making communication more inclusive. Ideal for enhancing accessibility in digital interfaces and education.",
-    image:
-      "/sign-language.png",
+    image: "/sign-language.png",
     url: "https://github.com/shubanborkar/Sign-Language-Translator",
   },
   {
     name: "Zomato Review Sentiment Analyzer & Clustering Tool",
     description:
       "Where data meets dining decisions. Built with Python, NLP, and Unsupervised ML, this project analyzes Zomato restaurant reviews to determine customer sentiment and clusters restaurants based on cuisine, location, and ratings. It helps users explore patterns in food preferences and identify top-performing spots using K-Means clustering.",
-    image:
-      "/Screenshot 2025-06-14 at 3.20.07 AM.png",
+    image: "/zomato-sentiment.png",
     url: "https://github.com/shubanborkar/Zomato-Review-Sentiment-Analysis-And-Restaurant-Clustering",
   },
   {
     name: "Loan Defaulter Prediction System",
     description:
       "Smart risk detection using machine learning. A predictive analytics tool developed with Flask, Logistic Regression, and AdaBoost to identify potential loan defaulters. This project processes applicant data to forecast default risk, helping financial institutions make informed lending decisions and reduce non-performing assets.",
-    image:
-      "/loan-defaulter.png",
+    image: "/loan-defaulter.png",
     url: "https://github.com/shubanborkar/Loan-Defaulter-Prediction",
   },
   {
     name: "Job Sequencing Visualizer",
     description:
       "Optimizing tasks, one job at a time. This project implements the Greedy Algorithm for job sequencing to maximize profit, wrapped in a user-friendly Tkinter GUI. Users can input job parameters, visualize optimal sequences, and understand how algorithmic scheduling works in real time — a perfect blend of theory and interactivity.",
-    image:
-      "/Screenshot 2025-06-14 at 3.23.49 AM.png",
+    image: "/job-sequencing.png",
     url: "https://github.com/shubanborkar/Job-Sequencing-Program-with-GUI",
   },
   {
     name: "Language Translator with GUI",
     description:
       "Breaking language barriers with Python. A simple yet effective translator built using Tkinter and Googletrans. This project lets users translate text across multiple languages through a clean, intuitive interface. It demonstrates the power of APIs and Python's flexibility in creating real-world utility tools.",
-    image:
-      "/Screenshot 2025-06-14 at 3.23.14 AM.png",
+    image: "/language-translator.png",
     url: "https://github.com/shubanborkar/Python-Language-Translator-with-GUI",
   },
 ];

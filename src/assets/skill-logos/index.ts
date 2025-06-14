@@ -1,6 +1,6 @@
 // Programming Languages
 export { default as PythonLogo } from './python.svg';
-export { default as SQLLogo } from './sql.png';
+export { default as SQLLogo } from '/sql.png';
 export { default as HTMLLogo } from './html5.svg';
 export { default as CSSLogo } from './css3.svg';
 
@@ -21,9 +21,7 @@ export { default as GitLogo } from './git.svg';
 export { default as GoogleCloudLogo } from './google-cloud.svg';
 export { default as FlaskLogo } from './flask.svg';
 export { default as VSCodeLogo } from './vscode.svg';
-export { default as TableauLogo } from './tableau.png';
-
-// Databases
+export { default as TableauLogo } from '/tableau.png';
 export { default as MySQLLogo } from './mysql.svg';
 export { default as SQLiteLogo } from './sqlite.svg';
 
@@ -33,4 +31,4 @@ export { default as IllustratorLogo } from './illustrator.svg';
 export { default as PremiereProLogo } from './premiere-pro.svg';
 export { default as AfterEffectsLogo } from './after-effects.svg';
 export { default as BlenderLogo } from './blender.svg';
-export { default as CanvaLogo } from './canva.png'; 
+export { default as CanvaLogo } from '/canva.png'; 
