@@ -95,7 +95,7 @@ const Hero: React.FunctionComponent<HeroProps> = () => {
             </p>
             <h2 className="name">I'm Shuban Borkar</h2>
             <p className="extraDetails">
-              Aspiring Data Science Intern skilled in Python, Machine Learning, and EDA. Experienced in building Flask APIs and deploying cloud-ready solutions. Currently pursuing BE in AI & Data Science at TSEC Mumbai.
+              Aspiring Data Scientist skilled in Python, Machine Learning, and EDA. Experienced in building Flask APIs and deploying cloud-ready solutions. Currently pursuing BE in AI & Data Science at TSEC Mumbai.
             </p>
             <div className="résuméContainer">
               <a className="résumé" href="/Résumé.pdf" target="_blank" rel="noopener noreferrer">
