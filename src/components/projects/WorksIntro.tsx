@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../App";
+import { useTheme } from "../../context/ThemeContext";
 
 interface WorksIntroProps {}
 
 const WorksIntro: React.FunctionComponent<WorksIntroProps> = () => {
-  const theme = useContext(ThemeContext);
+  const theme = useTheme();
   return (
     <div className={theme.isDarkmode ? "introWrapperDark" : "introWrapper"}>
       <div className="flexWks">

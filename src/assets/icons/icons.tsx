@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { SQLLogo, TableauLogo, CanvaLogo } from "../skill-logos";
+import { SQLLogo } from "../skill-logos";
 
 const draw = {
   hidden: { pathLength: 0, opacity: 0 },
