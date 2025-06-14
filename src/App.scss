@@ -1,0 +1,68 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+// Dark mode styles
+.App.dark {
+  --background-color: #1a1a1a;
+  --text-color: #ffffff;
+}
+
+// Light mode styles
+.App.light {
+  --background-color: #ffffff;
+  --text-color: #333333;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Default font settings */
+body {
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.6;
+}
+
+/* Code font settings */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+} 

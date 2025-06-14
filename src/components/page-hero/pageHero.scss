@@ -1,0 +1,299 @@
+@use "../../variables" as *;
+
+.pageHero,
+.pageHeroDark {
+  width: 100%;
+  background-color: var(--white-background);
+  position: relative;
+  padding-top: 9rem;
+  padding-bottom: 0rem;
+}
+
+.pageHeroDark {
+  background-color: var(--grey-900);
+
+  .topTextDark {
+    p {
+      color: var(--white-200) !important;
+    }
+  }
+
+  h1 {
+    color: var(--white-200) !important;
+  }
+
+  .extraTextDark {
+    color: var(--white-200) !important;
+  }
+}
+
+.pageHeroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 1rem 50px 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+
+  .topText,
+  .topTextDark {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    span {
+      display: flex;
+      align-items: center;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--grey-900);
+    }
+  }
+
+  .topTextDark {
+    p {
+      color: var(--white-200);
+    }
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--grey-900);
+    line-height: 1.2;
+    text-align: left;
+
+    span {
+      display: inline-block;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .extraText,
+  .extraTextDark {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--grey-900);
+    max-width: 800px;
+    text-align: left;
+  }
+
+  .extraTextDark {
+    color: var(--white-200);
+  }
+}
+
+@media (max-width: 768px) {
+  .pageHeroContainer {
+    padding: 0 1rem;
+    h1 {
+      font-size: 2.5rem;
+      text-align: left;
+    }
+    .extraText,
+    .extraTextDark {
+      font-size: 1.1rem;
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 2500px) {
+  .pageHeroWrapper img,
+  .pageHeroWrapperDark img {
+    width: unset;
+    margin-right: 28rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .pageHeroContainer {
+    padding: 0 8.875rem 6rem 6rem;
+    p.heading,
+    p.headingDark {
+      font-size: 5.5rem;
+      text-align: left;
+    }
+    .goldRects {
+      right: 220px;
+    }
+    .greenRects {
+      right: 200px;
+    }
+  }
+}
+
+@media (min-width: 835px) and (max-width: 1023px) {
+  .pageHeroContainer {
+    padding: 0 4rem 6rem 4rem;
+    p.heading,
+    p.headingDark {
+      font-size: 5rem;
+      text-align: left;
+    }
+    .goldRects {
+      right: 150px;
+      top: 370px;
+    }
+    .greenRects {
+      right: 200px;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 834px) {
+  .pageHeroContainer {
+    padding: 0 4rem 6rem 4rem;
+    p.heading,
+    p.headingDark {
+      font-size: 4rem;
+      margin: 0;
+      text-align: left;
+    }
+    p.extraText,
+    p.extraTextDark {
+      font-size: 0.875rem;
+      margin-top: 0;
+      text-align: left;
+    }
+    .purpleRects,
+    .goldRects,
+    .greenRects {
+      svg {
+        height: 28px;
+      }
+    }
+    .purpleRects {
+      top: 60px;
+    }
+    .goldRects {
+      top: 30px;
+      right: 30px;
+    }
+    .greenRects {
+      top: 320px;
+      right: 90px;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 693px) {
+  .pageHeroContainer {
+    p.heading,
+    p.headingDark {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .pageHero,
+  .pageHeroDark {
+    padding-top: 7rem;
+    padding-bottom: 0;
+  }
+  .pageHeroContainer {
+    padding: 0 1.31rem 2rem 1.31rem;
+    p.heading,
+    p.headingDark {
+      font-size: 2.5rem;
+      margin: 0;
+      text-align: left;
+    }
+    p.extraText,
+    p.extraTextDark {
+      font-size: 0.875rem;
+      margin-top: 0;
+      text-align: left;
+    }
+    .purpleRects,
+    .goldRects,
+    .greenRects {
+      svg {
+        height: 28px;
+      }
+    }
+    .purpleRects {
+      top: 60px;
+    }
+    .goldRects {
+      top: 30px;
+      right: 30px;
+    }
+    .greenRects {
+      top: 320px;
+      right: 90px;
+    }
+  }
+}
+
+@media (max-width: 395px) {
+  .pageHeroContainer {
+    p.heading,
+    p.headingDark {
+      font-size: 2.2rem;
+      margin: 0;
+      text-align: left;
+    }
+    p.extraText,
+    p.extraTextDark {
+      font-size: 0.9rem;
+      margin-top: 0;
+      text-align: left;
+    }
+    span.naij {
+      display: none;
+    }
+    .greenRects {
+      top: 310px;
+      right: 90px;
+    }
+  }
+}
+
+@media (max-width: 354px) {
+  .pageHeroContainer {
+    p.heading,
+    p.headingDark {
+      font-size: 1.7rem;
+    }
+    p.extraText,
+    p.extraTextDark {
+      font-size: 0.9rem;
+    }
+    span.naij {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 290px) {
+  .pageHeroContainer {
+    padding: 7rem 0.9rem 5rem 0.9rem;
+    p.heading,
+    p.headingDark {
+      font-size: 1.7rem;
+      margin: 0;
+    }
+    p.extraText,
+    p.extraTextDark {
+      font-size: 0.9rem;
+    }
+    span.naij {
+      display: none;
+    }
+    .greenRects {
+      top: 300px;
+      right: 50px;
+    }
+  }
+}

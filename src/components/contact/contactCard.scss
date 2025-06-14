@@ -1,0 +1,117 @@
+@use "../../variables" as *;
+
+.contactCard {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+
+    // Special styling for Gmail icon
+    .gmail-icon {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  .details {
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--gray-800);
+    }
+
+    p, a {
+      font-size: 1rem;
+      color: var(--gray-600);
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: var(--blue-600);
+      }
+    }
+  }
+}
+
+.contactCardDark {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: var(--gray-800);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+
+    // Special styling for Gmail icon
+    .gmail-icon {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  .details {
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--gray-200);
+    }
+
+    p, a {
+      font-size: 1rem;
+      color: var(--gray-400);
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: var(--blue-400);
+      }
+    }
+  }
+} 

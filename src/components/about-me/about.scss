@@ -1,0 +1,220 @@
+@use "../../variables" as *;
+
+.aboutMe {
+  width: 100%;
+  padding: 4rem 0;
+  background-color: var(--white);
+
+  .aboutMeContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  .aboutMeImage {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+      aspect-ratio: 1;
+    }
+  }
+
+  .aboutMeContent {
+    .aboutMeTitle {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 1.5rem;
+    }
+
+    .aboutMeText {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--gray-700);
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .experienceSection {
+    max-width: 1200px;
+    margin: 4rem auto 0;
+    padding: 0 1rem;
+
+    .experienceTitle {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 2rem;
+    }
+
+    .experienceContent {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .experienceItem {
+      .experienceItemTitle {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--gray-800);
+        margin-bottom: 0.5rem;
+      }
+
+      .experienceItemSubtitle {
+        font-size: 1.1rem;
+        color: var(--gray-600);
+        margin-bottom: 1rem;
+      }
+
+      .experienceItemList {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+        
+        li {
+          font-size: 1.1rem;
+          line-height: 1.8;
+          color: var(--gray-700);
+          margin-bottom: 0.5rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.aboutMeDark {
+  width: 100%;
+  padding: 4rem 0;
+  background-color: var(--black);
+
+  .aboutMeContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  .aboutMeImage {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      object-fit: cover;
+      aspect-ratio: 1;
+    }
+  }
+
+  .aboutMeContent {
+    .aboutMeTitleDark {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--gray-100);
+      margin-bottom: 1.5rem;
+    }
+
+    .aboutMeTextDark {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--gray-300);
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .experienceSection {
+    max-width: 1200px;
+    margin: 4rem auto 0;
+    padding: 0 1rem;
+
+    .experienceTitleDark {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--gray-100);
+      margin-bottom: 2rem;
+    }
+
+    .experienceContent {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .experienceItem {
+      .experienceItemTitleDark {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--gray-200);
+        margin-bottom: 0.5rem;
+      }
+
+      .experienceItemSubtitleDark {
+        font-size: 1.1rem;
+        color: var(--gray-400);
+        margin-bottom: 1rem;
+      }
+
+      .experienceItemListDark {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+        
+        li {
+          font-size: 1.1rem;
+          line-height: 1.8;
+          color: var(--gray-300);
+          margin-bottom: 0.5rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutMe,
+  .aboutMeDark {
+    padding: 1rem 0;
+  }
+}
