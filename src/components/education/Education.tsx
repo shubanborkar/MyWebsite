@@ -9,7 +9,7 @@ const Education = () => {
       institution: "Thadomal Shahani Engineering College (TSEC)",
       degree: "Bachelor of Engineering in Artificial Intelligence and Data Science",
       duration: "Nov. 2022 – May 2026",
-      cgpa: "CGPA – 8.79"
+      cgpa: "CGPA – 9"
     },
     {
       institution: "PACE Junior Science College",
