@@ -1,4 +1,3 @@
-import { WarningIcon } from "../../assets/icons/icons";
 import "./projectCard.scss";
 import { useTheme } from "../../context/ThemeContext";
 
@@ -7,7 +6,6 @@ interface ProjectCardProps {
   description: string;
   image: string;
   link: string;
-  index: number;
   deployedLink?: string; // Optional deployed website link
   isHomePage?: boolean; // New prop to indicate if this is on home page
 }
@@ -17,7 +15,6 @@ const ProjectCard: React.FunctionComponent<ProjectCardProps> = ({
   description,
   image,
   link,
-  index,
   deployedLink,
   isHomePage = false, // Default to false
 }) => {

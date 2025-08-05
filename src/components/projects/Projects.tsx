@@ -176,7 +176,7 @@ const Projects: React.FunctionComponent<ProjectsProps> = () => {
 
           <div className="carousel-track" ref={carouselRef}>
             <div className="carousel-content">
-              {projectsToDisplay.map((project, index) => (
+              {projectsToDisplay.map((project) => (
                 <ProjectCard
                   projectName={project.name}
                   image={project.image}
@@ -184,7 +184,6 @@ const Projects: React.FunctionComponent<ProjectsProps> = () => {
                   key={project.name}
                   link={project.url}
                   deployedLink={project.deployedLink}
-                  index={index + 1}
                   isHomePage={location.pathname === "/"}
                 />
               ))}
