@@ -95,10 +95,11 @@ const Hero: React.FunctionComponent<HeroProps> = () => {
             </p>
             <h2 className="name">I'm Shuban Borkar</h2>
             <p className="extraDetails">
-              Aspiring Data Scientist skilled in Python, Machine Learning, and EDA. Experienced in building Flask APIs and deploying cloud-ready solutions. Currently pursuing BE in AI & Data Science at TSEC Mumbai.
+            Analytically driven AI and Data Science student skilled in Python, statistical analysis, and machine learning.
+Experienced in building scalable data solutions using Flask, Cloud tools, and EDA techniques.
             </p>
             <div className="résuméContainer">
-              <a className="résumé" href="/Résumé.pdf" target="_blank" rel="noopener noreferrer">
+              <a className="résumé" href="/Shuban Borkar Resume.pdf" target="_blank" rel="noopener noreferrer">
                 <button className="button">
                   <span className="button__content">View My Résumé</span>
                 </button>

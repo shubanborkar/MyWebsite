@@ -140,7 +140,7 @@ const Header: React.FunctionComponent<HeaderProps> = () => {
                 >
                   Contact me
                 </p>
-                <a href="/Résumé.pdf" target="_blank">
+                <a href="/Shuban Borkar Resume.pdf" target="_blank">
                   <p>Résumé</p>
                 </a>
               </div>
@@ -200,7 +200,7 @@ const Header: React.FunctionComponent<HeaderProps> = () => {
           >
             Contact me
           </p>
-          <a href="/Résumé.pdf" target="_blank">
+          <a href="/Shuban Borkar Resume.pdf" target="_blank">
             <p>Résumé</p>
           </a>
           <button

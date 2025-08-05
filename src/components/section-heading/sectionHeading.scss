@@ -3,20 +3,28 @@
   position: relative;
   margin-bottom: 5.5em;
   text-align: center;
+  padding-top: 1.5em;
   p.headName {
     color: #101828;
     font-size: 2rem;
     font-style: normal;
     font-weight: 600;
+    // Default padding
+    padding-top: 0;
+  }
+  // Extra top padding for Featured Works
+  p.headName.featured-works {
+    padding-top: 1.5rem;
   }
   .headLine {
     border-radius: 2px;
     background: #bfc7d7;
     height: 4px;
     width: 50px;
-    position: absolute;
-    top: 45px;
-    left: 48%;
+    margin: 0.5em auto 0 auto;
+    position: static;
+    top: unset;
+    left: unset;
   }
 }
 .headingWrapperDark {

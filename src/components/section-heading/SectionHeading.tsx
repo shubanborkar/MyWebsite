@@ -11,7 +11,7 @@ const SectionHeading: React.FunctionComponent<SectionHeadingProps> = ({
   const theme = useTheme();
   return (
     <div className={theme.isDarkmode ? "headingWrapperDark" : "headingWrapper"}>
-      <p className="headName">{sectionName}</p>
+      <p className={`headName${sectionName === "Featured Works" ? " featured-works" : ""}`}>{sectionName}</p>
       <div className="headLine"></div>
     </div>
   );
