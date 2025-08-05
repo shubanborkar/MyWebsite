@@ -9,6 +9,7 @@ interface ProjectCardProps {
   link: string;
   index: number;
   deployedLink?: string; // Optional deployed website link
+  isHomePage?: boolean; // New prop to indicate if this is on home page
 }
 
 const ProjectCard: React.FunctionComponent<ProjectCardProps> = ({
@@ -18,6 +19,7 @@ const ProjectCard: React.FunctionComponent<ProjectCardProps> = ({
   link,
   index,
   deployedLink,
+  isHomePage = false, // Default to false
 }) => {
   const theme = useTheme();
 
@@ -27,7 +29,7 @@ const ProjectCard: React.FunctionComponent<ProjectCardProps> = ({
 
   return (
     <div
-      className={`dunks-card ${theme.isDarkmode ? "card-dark" : "card-light"}`}
+      className={`dunks-card ${theme.isDarkmode ? "card-dark" : "card-light"} ${isHomePage ? "home-page-card" : ""}`}
     >
       <div className="card-image-container" onClick={handleImageClick}>
         <img src={image} alt={`${projectName} project`} className="project-image" />

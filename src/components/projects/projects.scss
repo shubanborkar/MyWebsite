@@ -125,6 +125,16 @@
   max-width: 1500px;
   margin: 0 auto;
   
+  &.featured-carousel {
+    max-width: 1350px; // Increased from 1200px to accommodate larger cards
+    justify-content: center; // Center the cards on home page
+    
+    .carousel-content {
+      justify-content: center; // Center the cards
+      gap: 1.5rem; // Slightly smaller gap for home page
+    }
+  }
+  
   @media (max-width: 768px) {
     padding: 1rem 1rem;
     max-width: 100%;

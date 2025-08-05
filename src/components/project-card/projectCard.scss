@@ -34,6 +34,87 @@
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
     }
   }
+  
+  // Smaller cards for home page
+  &.home-page-card {
+    width: 400px; // Keep current width
+    height: 620px; // Increased from 540px to accommodate all content
+    
+    .card-image-container {
+      height: 200px; // Keep current height
+    }
+    
+    .card-content {
+      padding: 1.5rem; // Keep current padding
+      height: 420px; // Increased from 340px to give more space for content
+      
+      .project-title,
+      .project-title-dark {
+        font-size: 1.35rem; // Keep current size
+        margin: 0 0 1rem 0; // Keep current margin
+      }
+      
+      .project-description,
+      .project-description-dark {
+        font-size: 0.95rem; // Keep current size
+        line-height: 1.6; // Keep current line height
+      }
+      
+      .card-links {
+        margin-top: 2rem; // Increased from 1.75rem to give more space
+        padding-top: 1rem; // Keep current padding
+      }
+    }
+    
+    // Responsive design for home page cards
+    @media (max-width: 768px) {
+      width: 370px; // Keep current width
+      height: 580px; // Increased from 500px
+      
+      .card-image-container {
+        height: 180px; // Keep current height
+      }
+      
+      .card-content {
+        padding: 1.25rem; // Keep current padding
+        height: 400px; // Increased from 320px
+        
+        .project-title,
+        .project-title-dark {
+          font-size: 1.2rem; // Keep current size
+        }
+        
+        .project-description,
+        .project-description-dark {
+          font-size: 0.9rem; // Keep current size
+        }
+      }
+    }
+    
+    @media (max-width: 480px) {
+      width: 340px; // Keep current width
+      height: 540px; // Increased from 470px
+      
+      .card-image-container {
+        height: 170px; // Keep current height
+      }
+      
+      .card-content {
+        padding: 1rem; // Keep current padding
+        height: 370px; // Increased from 300px
+        
+        .project-title,
+        .project-title-dark {
+          font-size: 1.1rem; // Keep current size
+        }
+        
+        .project-description,
+        .project-description-dark {
+          font-size: 0.85rem; // Keep current size
+        }
+      }
+    }
+  }
 }
 
 .card-image-container {

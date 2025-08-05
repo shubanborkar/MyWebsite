@@ -92,9 +92,9 @@ const Projects: React.FunctionComponent<ProjectsProps> = () => {
 
   const scrollToIndex = (index: number) => {
     if (carouselRef.current) {
-      // Updated card dimensions to match the actual card width
-      const cardWidth = 450; // Updated from 380 to match new card width
-      const gap = 32; // 2rem gap between cards
+      // Different card dimensions for home page vs works page
+      const cardWidth = location.pathname === "/" ? 400 : 450; // Updated home page card width
+      const gap = location.pathname === "/" ? 24 : 32; // Smaller gap on home page (1.5rem vs 2rem)
       const scrollPosition = index * (cardWidth + gap);
       
       carouselRef.current.scrollTo({
@@ -118,8 +118,8 @@ const Projects: React.FunctionComponent<ProjectsProps> = () => {
   // Start with first card as leftmost
   useEffect(() => {
     if (carouselRef.current && projectsToDisplay.length > 0) {
-      const cardWidth = 450; // Updated to match new card width
-      const gap = 32;
+      const cardWidth = location.pathname === "/" ? 400 : 450; // Updated home page card width
+      const gap = location.pathname === "/" ? 24 : 32; // Different gaps for home vs works
       
       // Start with first card (index 0) as the leftmost visible card
       const startIndex = 0; // First card (Zomato)
@@ -132,7 +132,7 @@ const Projects: React.FunctionComponent<ProjectsProps> = () => {
       
       setActiveIndex(startIndex);
     }
-  }, [projectsToDisplay.length]);
+  }, [projectsToDisplay.length, location.pathname]);
 
   // Add scroll event listener to check scroll position
   useEffect(() => {
@@ -185,6 +185,7 @@ const Projects: React.FunctionComponent<ProjectsProps> = () => {
                   link={project.url}
                   deployedLink={project.deployedLink}
                   index={index + 1}
+                  isHomePage={location.pathname === "/"}
                 />
               ))}
             </div>
